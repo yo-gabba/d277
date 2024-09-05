@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Lone Star State: Texas</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Heading, decription, and Texas img-->
+    
+    <header>
+        <h1>Welcome to Texas, yall!</h1>
+        <p>Discover the Lone Star State with us as we travel across vast praires to busy cities. Where the spirit of independence meets the charm of southern hospitality. Texas has much to offer from its endless opportunities to its diverse cultures.</p>
+        <img src="texas_logo.jpeg" alt="image of Texas outline" width="50px">
+    </header>
+
+    <!-- Section Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="austin.html">Austin</a></li>
+            <li><a href="houston.html">Houston</a></li>
+            <li><a href="dallas.html">Dallas</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--About Texas-->
+    <section id="about">
+        <h2 id="state-heading">Meet Texas</h2>
+        <p>Texas is the second-largest state in the U.S., in both area and population. Known for its rich history, booming economy, and vibrant culture. The state is home to major cities such as Austin, Houston, and Dallas-Fort Worth, each offering its own distinct way of living.</p>
+        <img src="landscape.jpg" alt="Landscape photo of Texas sunset and bluebonnets">
+
+        <h2>Quick Facts</h2>
+        <ol>
+            <li>Capital: Austin</li>
+            <li>Population: 29 million</li>
+            <li>Area: 268,596 square miles</li>
+            <li>Capital: Austin</li>
+            <li>Average Household Income: $73,035 </li>
+            <li>Major Industries: Oil and Gas, Technology, Agriculture, Aerospace</li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or comments, feel free to contact us using the form below.</p>
+        
+        <form onsubmit="return validateEmail()">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="confirm_email">Confirm Email</label>
+            <input type="email" id="confirm_email" name="confirm_email" placeholder="Confirm your email" required><br>
+            
+            <label for="question">Question or Comment</label><br>
+            <textarea id="question" name="question" placeholder="Enter your question or comment" required></textarea><br>
+            
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    <!--Details of events happening in TX-->
+    <aside>
+        <h3>Upcoming Events in Texas:</h3>
+        <p>Texas State Fair - 09/29/2024</p>
+        <p>SxSW Festival - 03/08/2024</p>
+        <p>Houston Rodeo - 02/27/2024</p>
+
+        <h3>Weather Update</h3>
+        <p>Current Temperature: 85F</p>
+        <p>Forecast: Sunny with a chance of evening thunderstorms</p>
+    </aside>
+
+    <!--Contact information-->
+    <footer>
+        <p>Visit <a href="https://www.traveltexas.com/" target="_blank">Travel Texas</a> for more information.</p>
+    </footer>
+
+</body>
+</html>
